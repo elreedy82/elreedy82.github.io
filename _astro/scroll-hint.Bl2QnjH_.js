@@ -1,0 +1,1 @@
+function s(){const o=document.querySelectorAll("[data-scroll-hint-region]");for(const e of o){const n=e.getAttribute("aria-describedby"),i=n?document.getElementById(n):null;if(!i)continue;const t=()=>{i.hidden=e.scrollWidth<=e.clientWidth+1};t(),typeof ResizeObserver=="function"&&new ResizeObserver(t).observe(e),window.addEventListener("resize",t,{passive:!0})}}export{s as i};
